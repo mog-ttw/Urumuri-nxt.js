@@ -4,28 +4,16 @@ A multi-page marketing website for **Urumuri**, a next-generation mobility platf
 
 ---
 
-## Quick start (for presenting)
+## Quick start
 
-### Option 1 — Launch script (recommended)
-
-```bash
-cd /Users/Daniel/Desktop/Urumuri
-chmod +x present.sh
-./present.sh
-```
-
-This starts a local server and opens the homepage in your default browser.
-
-### Option 2 — Manual
+### Launch local server
 
 ```bash
 cd /Users/Daniel/Desktop/Urumuri
-python3 -m http.server 8765
+python3 -m http.server 8000
 ```
 
-Then open [http://localhost:8765/index.html](http://localhost:8765/index.html) in your browser.
-
-> **Tip:** Use full-screen mode (`F11` on Windows/Linux, `Ctrl+Cmd+F` on Mac) and zoom to 100% before you present.
+Then open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ---
 
@@ -46,7 +34,7 @@ Then open [http://localhost:8765/index.html](http://localhost:8765/index.html) i
 
 ---
 
-## Key features to demo live
+## Key features
 
 1. **Homepage hero** — headline, stats (24/7, 200+ fleet, trusted across Kigali), and animated service panels.
 2. **Service cards** — click through Transport, Food, and Courier pages.
@@ -55,6 +43,7 @@ Then open [http://localhost:8765/index.html](http://localhost:8765/index.html) i
 5. **Scroll animations** — scroll down on any page to show staggered card entrances.
 6. **Mobile layout** — resize the browser or use DevTools device mode to show the hamburger menu.
 7. **Contact & social** — WhatsApp link, Instagram, X, Facebook in the footer.
+8. **Review form** — Interactive star rating system with form validation.
 
 ---
 
@@ -82,6 +71,8 @@ Then open [http://localhost:8765/index.html](http://localhost:8765/index.html) i
 
 ## Project structure
 
+### Essential files (for deployment)
+
 ```
 Urumuri/
 ├── index.html              # Homepage
@@ -96,25 +87,8 @@ Urumuri/
 ├── reviews.html            # Customer review form
 ├── styles.css              # Global styles and animations
 ├── script.js               # Interactivity, i18n, theme
-├── translations.json       # Translation strings
-├── present.sh              # One-command demo launcher
-├── PRESENTATION-SCRIPT.md  # Verbal walkthrough script
-└── Readme.md               # This file
+└── assets/                 # Images and media assets
 ```
-
----
-
-## Presentation checklist
-
-Before you go live:
-
-- [ ] Run `./present.sh` and confirm the site loads
-- [ ] Test dark mode toggle
-- [ ] Switch language once to show i18n works
-- [ ] Have Transport, About, and Contact pages ready to click
-- [ ] Close unrelated browser tabs
-- [ ] Turn off notifications / Do Not Disturb
-- [ ] Read through `PRESENTATION-SCRIPT.md` once
 
 ---
 
