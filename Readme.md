@@ -1,6 +1,6 @@
 # Urumuri — Rwanda's Intelligent Mobility Ecosystem
 
-A multi-page marketing website for **Urumuri**, a next-generation mobility platform serving Kigali and nearby districts in Rwanda. The site covers transport, food delivery, courier services, merchant tools, driver programs, safety, and contact — built with pure HTML, CSS, and JavaScript.
+A multi page marketing website for **Urumuri**, a next generation mobility platform serving Kigali and nearby districts in Rwanda. The site covers transport, food delivery, courier services, merchant tools, driver programs, safety, and contact   built with pure HTML, CSS, and JavaScript.
 
 ---
 
@@ -39,7 +39,7 @@ Then open [http://localhost:8000](http://localhost:8000) in your browser.
 1. **Homepage hero** — headline, stats (24/7, 200+ fleet, trusted across Kigali), and animated service panels.
 2. **Service cards** — click through Transport, Food, and Courier pages.
 3. **Dark / light mode** — toggle in the top-right header (moon/sun icon).
-4. **Language switcher** — English, Français, 中文, Kinyarwanda (auto-injected by `script.js`).
+4. **Language switcher** — English, Français, 中文, Kinyarwanda (auto injected by `script.js`).
 5. **Scroll animations** — scroll down on any page to show staggered card entrances.
 6. **Mobile layout** — resize the browser or use DevTools device mode to show the hamburger menu.
 7. **Contact & social** — WhatsApp link, Instagram, X, Facebook in the footer.
@@ -62,7 +62,7 @@ Then open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## Tech stack
 
-- **HTML5** — semantic, multi-page structure
+- **HTML5** — semantic, multi page structure
 - **CSS3** — custom properties, responsive grid, scroll/hover animations
 - **JavaScript (vanilla)** — navigation, theme toggle, i18n, scroll observer, parallax, review form
 - **No build step** — open or serve the folder directly
@@ -94,10 +94,10 @@ Urumuri/
 
 ## Contact (from the site)
 
-- **Phone:** +250 788 246 777
+- **Phone:** +250 793 155 154
 - **Email:** info@urumuri.rw
 - **Office:** Kigali Innovation District, Kigali, Rwanda
-- **WhatsApp:** [+250 788 246 777](https://api.whatsapp.com/send/?phone=%2B250788246777)
+- **WhatsApp:** [+250 793 155 154](https://api.whatsapp.com/send/?phone=%2B250793155154)
 
 ---
 
