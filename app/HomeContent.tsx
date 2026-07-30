@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "@/lib/LanguageContext";
 import { useAnimateOnScroll } from "@/lib/useAnimateOnScroll";
 import HeroVisual from "@/components/HeroVisual";
+import { withBasePath } from "@/lib/basePath";
 import galleryStyles from "./brand-gallery.module.css";
 
 export default function HomeContent() {
@@ -104,7 +105,7 @@ export default function HomeContent() {
           <div ref={galleryGrid.ref} className={`section-grid ${galleryGrid.className}`}>
             <div className={galleryStyles.galleryCard}>
               <Image
-                src="/urumuri-rider-passenger.jpg"
+                src={withBasePath("/urumuri-rider-passenger.jpg")}
                 alt="Urumuri rider giving a passenger a safe ride through Kigali"
                 width={1537}
                 height={1023}
@@ -117,7 +118,7 @@ export default function HomeContent() {
             </div>
             <div className={galleryStyles.galleryCard}>
               <Image
-                src="/urumuri-courier-handoff.jpg"
+                src={withBasePath("/urumuri-courier-handoff.jpg")}
                 alt="Urumuri courier handing off a delivery bag from a branded motorcycle"
                 width={842}
                 height={550}

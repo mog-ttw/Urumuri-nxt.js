@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "@/lib/LanguageContext";
 import { useAnimateOnScroll } from "@/lib/useAnimateOnScroll";
 import HeroVisual from "@/components/HeroVisual";
+import { withBasePath } from "@/lib/basePath";
 
 export default function MerchantsContent() {
   const t = useTranslations();
@@ -42,7 +43,7 @@ export default function MerchantsContent() {
               <div className="hero-badge">{p.hero.badge}</div>
               <div className="media-panel" style={{ padding: 0, overflow: "hidden", height: 280 }}>
                 <Image
-                  src="/urumuri-merchant-feature.jpg"
+                  src={withBasePath("/urumuri-merchant-feature.jpg")}
                   alt="Featured dish showcased through an Urumuri merchant partner"
                   fill
                   style={{ objectFit: "cover" }}

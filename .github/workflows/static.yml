@@ -41,7 +41,7 @@ jobs:
       - name: Build (static export)
         run: npm run build
         env:
-          NEXT_BASE_PATH: '/Urumuri-nxt.js'
+          NEXT_PUBLIC_BASE_PATH: '/Urumuri-nxt.js'
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
