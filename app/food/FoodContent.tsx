@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations } from "@/lib/LanguageContext";
 import { useAnimateOnScroll } from "@/lib/useAnimateOnScroll";
 import HeroVisual from "@/components/HeroVisual";
+import { withBasePath } from "@/lib/basePath";
 
 export default function FoodContent() {
   const t = useTranslations();
@@ -38,7 +40,14 @@ export default function FoodContent() {
             <div className="hero-visual-overlay"></div>
             <div className="hero-visual-frame">
               <div className="hero-badge">{p.hero.badge}</div>
-              <div className="media-panel">{p.hero.media}</div>
+              <div className="media-panel" style={{ padding: 0, overflow: "hidden", height: 280 }}>
+                <Image
+                  src={withBasePath("/urumuri-food-delivery.png")}
+                  alt="Urumuri rider delivering branded food containers"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
             </div>
           </HeroVisual>
         </div>
