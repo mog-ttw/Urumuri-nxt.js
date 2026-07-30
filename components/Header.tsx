@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useLanguage, useTranslations } from "@/lib/LanguageContext";
 import { useTheme } from "@/lib/ThemeContext";
 import { NAV_ITEMS } from "@/lib/constants";
+import { withBasePath } from "@/lib/basePath";
 import type { Language } from "@/lib/translations";
 
 const normalize = (path: string) => {
@@ -23,8 +25,16 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <Link className="brand" href="/">
-          URUMURI
+        <Link className="brand brand-logo" href="/">
+          <Image
+            src={withBasePath(
+              theme === "dark" ? "/urumuri-logo-dark.png" : "/urumuri-logo-light.png"
+            )}
+            alt="URUMURI"
+            width={941}
+            height={941}
+            priority
+          />
         </Link>
         <nav className={`nav-links${navOpen ? " active" : ""}`} id="navLinks">
           {NAV_ITEMS.map((item) => (

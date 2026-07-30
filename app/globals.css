@@ -330,6 +330,17 @@ button,
   white-space: nowrap;
 }
 
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-logo img {
+  height: 74px;
+  width: auto;
+  object-fit: contain;
+}
+
 .nav-links {
   display: flex;
   flex-wrap: nowrap;
