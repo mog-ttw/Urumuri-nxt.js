@@ -1,0 +1,32 @@
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.75rem 2rem;
+  transition: transform 0.35s var(--ease-bounce), box-shadow 0.28s var(--ease-smooth);
+}
+
+.faqItem:hover {
+  transform: translateY(-3px);
+}
+
+.faqItem h3 {
+  margin: 0 0 0.6rem;
+  color: var(--card-heading);
+  font-size: 1.15rem;
+}
+
+.faqItem p {
+  margin: 0;
+  color: var(--card-text);
+  line-height: 1.65;
+}

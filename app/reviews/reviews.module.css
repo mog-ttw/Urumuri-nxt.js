@@ -1,0 +1,208 @@
+.reviewSection {
+  padding: 6rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+.reviewContent {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.reviewHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.reviewHeader h1 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  margin: 1rem 0;
+  letter-spacing: -0.04em;
+  color: var(--text-main);
+}
+
+.reviewHeader p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.reviewForm {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 3rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--card-border);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-main);
+  font-size: 0.95rem;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s var(--ease-smooth);
+  background: var(--surface);
+  color: var(--text-main);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--royal);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(31, 79, 146, 0.1);
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.ratingGroup {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.starRating {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 2.25rem;
+}
+
+.star {
+  cursor: pointer;
+  transition: transform 0.2s var(--ease-bounce), color 0.2s var(--ease-smooth);
+  color: var(--text-muted);
+  user-select: none;
+}
+
+.star:hover,
+.star.active {
+  color: var(--accent);
+  transform: scale(1.15);
+}
+
+.ratingLabel {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  min-width: 80px;
+}
+
+.formActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.formActions button,
+.formActions a {
+  flex: 1;
+  padding: 1.1rem 2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-bounce);
+  text-decoration: none;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnSubmit {
+  background: var(--royal);
+  color: var(--white);
+  box-shadow: 0 18px 40px rgba(31, 79, 146, 0.25);
+}
+
+.btnSubmit:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 24px 50px rgba(31, 79, 146, 0.35);
+}
+
+.btnCancel {
+  background: var(--surface);
+  color: var(--text-main);
+  border: 2px solid var(--border);
+}
+
+.btnCancel:hover {
+  background: var(--surface-strong);
+  transform: translateY(-2px);
+  border-color: var(--text-muted);
+}
+
+.successMessage {
+  display: none;
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+  border: 2px solid #4caf50;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2e7d32;
+  box-shadow: 0 12px 30px rgba(76, 175, 80, 0.15);
+}
+
+.successMessage.visible {
+  display: block;
+}
+
+.successMessage h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+  color: #2e7d32;
+}
+
+.successMessage p {
+  margin: 0;
+  color: #388e3c;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .reviewSection {
+    padding: 4rem 0;
+  }
+
+  .reviewForm {
+    padding: 2rem;
+  }
+
+  .formActions {
+    flex-direction: column;
+  }
+
+  .reviewHeader {
+    margin-bottom: 2rem;
+  }
+
+  .starRating {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,44 @@
+.galleryCard {
+  position: relative;
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--card-border);
+  aspect-ratio: 3 / 2;
+  transform: translateZ(0);
+  transition: transform 0.4s var(--ease-bounce), box-shadow 0.32s var(--ease-smooth);
+}
+
+.galleryCard:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+.galleryCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.galleryCaption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1.5rem 1.75rem;
+  background: linear-gradient(0deg, rgba(6, 14, 28, 0.86) 0%, rgba(6, 14, 28, 0.35) 60%, rgba(6, 14, 28, 0) 100%);
+  color: #f8fafc;
+}
+
+.galleryCaption p {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.galleryCaption span {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: #d7e4f2;
+  font-weight: 400;
+}

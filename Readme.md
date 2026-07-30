@@ -1,36 +1,43 @@
 # Urumuri — Rwanda's Intelligent Mobility Ecosystem
 
-A multi page marketing website for **Urumuri**, a next generation mobility platform serving Kigali and nearby districts in Rwanda. The site covers transport, food delivery, courier services, merchant tools, driver programs, safety, and contact   built with pure HTML, CSS, and JavaScript.
+A multi page marketing website for **Urumuri**, a next generation mobility platform serving Kigali and nearby districts in Rwanda. The site covers transport, food delivery, courier services, merchant tools, driver programs, safety, FAQs and contact — built with **Next.js** (App Router + TypeScript).
 
 ---
 
 ## Quick start
 
-### Launch local server
-
 ```bash
-cd /Users/Daniel/Desktop/Urumuri
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
-Then open [http://localhost:8000](http://localhost:8000) in your browser.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+To produce the static export used for deployment:
+
+```bash
+npm run build
+```
+
+This generates a fully static site in `out/`, ready to be served from any static host (the project deploys to GitHub Pages via `.github/workflows/static.yml`).
 
 ---
 
 ## Site map
 
-| Page | File | What to show |
-|------|------|--------------|
-| Home | `index.html` | Brand story, three core services, stats, ecosystem overview |
-| Transport | `transport.html` | Electric rides, safety gear, student discounts |
-| Food | `food.html` | Restaurant & grocery delivery |
-| Courier | `courier.html` | Package delivery, same-day options |
-| Merchants | `merchants.html` | Business analytics and partnership tools |
-| Drivers | `drivers.html` | Driver recruitment, training, electric fleet |
-| About | `about.html` | Mission, vision, values |
-| Safety | `safety.html` | Safety standards and emergency support |
-| Contact | `contact.html` | Office, phone, email, WhatsApp |
-| Reviews | `reviews.html` | Customer review form |
+| Page | Route | What to show |
+|------|-------|--------------|
+| Home | `/` | Brand story, three core services, stats, ecosystem overview |
+| Transport | `/transport` | Electric rides, safety gear, student discounts |
+| Food | `/food` | Restaurant & grocery delivery |
+| Courier | `/courier` | Package delivery, same-day options |
+| Merchants | `/merchants` | Business analytics and partnership tools |
+| Drivers | `/drivers` | Driver recruitment, training, electric fleet |
+| About | `/about` | Mission, vision, values |
+| Safety | `/safety` | Safety standards and emergency support |
+| Contact | `/contact` | Office, phone, email, WhatsApp |
+| Reviews | `/reviews` | Customer review form |
+| FAQs | `/faqs` | Frequently asked questions |
 
 ---
 
@@ -38,12 +45,12 @@ Then open [http://localhost:8000](http://localhost:8000) in your browser.
 
 1. **Homepage hero** — headline, stats (24/7, 200+ fleet, trusted across Kigali), and animated service panels.
 2. **Service cards** — click through Transport, Food, and Courier pages.
-3. **Dark / light mode** — toggle in the top-right header (moon/sun icon).
-4. **Language switcher** — English, Français, 中文, Kinyarwanda (auto injected by `script.js`).
+3. **Dark / light mode** — toggle in the top-right header (moon/sun icon), persisted to `localStorage`.
+4. **Language switcher** — English, Français, 中文, Kinyarwanda.
 5. **Scroll animations** — scroll down on any page to show staggered card entrances.
 6. **Mobile layout** — resize the browser or use DevTools device mode to show the hamburger menu.
 7. **Contact & social** — WhatsApp link, Instagram, X, Facebook in the footer.
-8. **Review form** — Interactive star rating system with form validation.
+8. **Review form** — interactive star rating system with client-side validation and `localStorage` persistence.
 
 ---
 
@@ -62,32 +69,34 @@ Then open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## Tech stack
 
-- **HTML5** — semantic, multi page structure
-- **CSS3** — custom properties, responsive grid, scroll/hover animations
-- **JavaScript (vanilla)** — navigation, theme toggle, i18n, scroll observer, parallax, review form
-- **No build step** — open or serve the folder directly
+- **Next.js** (App Router, TypeScript) — statically exported (`output: 'export'`), no server required
+- **React Context** — theme (light/dark) and language (en/fr/zh/rw) state, persisted to `localStorage`
+- **next/font** — self-hosted Bricolage Grotesque and DM Sans
+- **Hand-written CSS** — custom properties, responsive grid, scroll/hover animations (ported from the original static site)
 
 ---
 
 ## Project structure
 
-### Essential files (for deployment)
-
 ```
 Urumuri/
-├── index.html              # Homepage
-├── transport.html          # Transport service page
-├── food.html               # Food delivery page
-├── courier.html            # Courier service page
-├── merchants.html          # Merchant partnerships
-├── drivers.html            # Driver program
-├── about.html              # Mission, vision, values
-├── safety.html             # Safety information
-├── contact.html            # Contact details
-├── reviews.html            # Customer review form
-├── styles.css              # Global styles and animations
-├── script.js               # Interactivity, i18n, theme
-└── assets/                 # Images and media assets
+├── app/
+│   ├── layout.tsx           # Root layout: fonts, theme/language providers, header/footer
+│   ├── globals.css          # Global styles and animations
+│   ├── page.tsx             # Homepage
+│   ├── transport/           # Transport service page
+│   ├── food/                # Food delivery page
+│   ├── courier/              # Courier service page
+│   ├── merchants/            # Merchant partnerships
+│   ├── drivers/              # Driver program
+│   ├── about/                # Mission, vision, values
+│   ├── safety/                # Safety information
+│   ├── contact/                # Contact details
+│   ├── reviews/                 # Customer review form
+│   └── faqs/                    # Frequently asked questions
+├── components/               # Header, Footer, HeroVisual, shared UI
+├── lib/                      # Translations, theme/language contexts, scroll-reveal hook
+└── public/                   # Static assets
 ```
 
 ---
