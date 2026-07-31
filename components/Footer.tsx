@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
         <div className="footer-column">
           <p className="footer-heading">{f.headings.legal}</p>
-          <a href="#">{f.links.privacy}</a>
+          <Link href="/privacy">{f.links.privacy}</Link>
           <a href="#">{f.links.terms}</a>
           <a href="#">{f.links.cookies}</a>
           <a href="#">{f.links.driverTerms}</a>
