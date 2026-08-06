@@ -33,7 +33,7 @@ export default function Footer() {
           <Link href="/drivers">{f.links.drivers}</Link>
           <Link href="/merchants">{f.links.merchants}</Link>
           <Link href="/safety">{f.links.safety}</Link>
-          <a href="#">{f.links.careers}</a>
+          <Link href="/careers">{f.links.careers}</Link>
         </div>
         <div className="footer-column">
           <p className="footer-heading">{f.headings.support}</p>

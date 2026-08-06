@@ -844,6 +844,11 @@ body[data-theme="dark"] .nav-toggle {
               linear-gradient(180deg, rgba(255,255,255,0.9), rgba(247, 250, 254, 0.9));
 }
 
+body[data-theme="dark"] .section-glass {
+  background: radial-gradient(circle at top left, rgba(212, 175, 55, 0.08), transparent 20%),
+              linear-gradient(180deg, rgba(13, 23, 40, 0.9), rgba(8, 17, 29, 0.9));
+}
+
 .glass-panel {
   position: relative;
   border-radius: 30px;

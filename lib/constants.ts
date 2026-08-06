@@ -20,7 +20,7 @@ export const SOCIAL_LINKS = [
     icon: "https://cdn.simpleicons.org/whatsapp/ffffff",
   },
   {
-    href: "#",
+    href: "https://www.instagram.com/urumurimjumbe",
     label: "Instagram",
     icon: "https://cdn.simpleicons.org/instagram/ffffff",
   },
