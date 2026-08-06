@@ -23,7 +23,7 @@ export default function Footer() {
           <p className="footer-heading">{f.headings.legal}</p>
           <Link href="/privacy">{f.links.privacy}</Link>
           <a href="#">{f.links.terms}</a>
-          <a href="#">{f.links.cookies}</a>
+          <Link href="/cookie-policy">{f.links.cookies}</Link>
           <Link href="/driver-terms">{f.links.driverTerms}</Link>
           <Link href="/merchant-terms">{f.links.merchantTerms}</Link>
         </div>
