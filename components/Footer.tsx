@@ -24,7 +24,7 @@ export default function Footer() {
           <Link href="/privacy">{f.links.privacy}</Link>
           <a href="#">{f.links.terms}</a>
           <a href="#">{f.links.cookies}</a>
-          <Link href="/merchant-terms">{f.links.driverTerms}</Link>
+          <Link href="/driver-terms">{f.links.driverTerms}</Link>
           <Link href="/merchant-terms">{f.links.merchantTerms}</Link>
         </div>
         <div className="footer-column">
