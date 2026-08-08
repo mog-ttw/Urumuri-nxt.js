@@ -99,34 +99,34 @@ export default function HomeContent() {
       <section className="section section-gallery">
         <div className="container">
           <div ref={galleryHeader.ref} className={`section-header ${galleryHeader.className}`}>
-            <p className="eyebrow">On the road</p>
-            <h2>Real riders, real branding, real trust across Kigali.</h2>
+            <p className="eyebrow">{home.gallery.eyebrow}</p>
+            <h2>{home.gallery.title}</h2>
           </div>
           <div ref={galleryGrid.ref} className={`section-grid ${galleryGrid.className}`}>
             <div className={galleryStyles.galleryCard}>
               <Image
                 src={withBasePath("/urumuri-rider-passenger.jpg")}
-                alt="Urumuri rider giving a passenger a safe ride through Kigali"
+                alt={home.gallery.riderAlt}
                 width={1537}
                 height={1023}
                 sizes="(max-width: 720px) 100vw, 50vw"
               />
               <div className={galleryStyles.galleryCaption}>
-                <p>Safe, everyday rides</p>
-                <span>Every trip backed by certified gear and trained riders.</span>
+                <p>{home.gallery.riderTitle}</p>
+                <span>{home.gallery.riderText}</span>
               </div>
             </div>
             <div className={galleryStyles.galleryCard}>
               <Image
                 src={withBasePath("/urumuri-courier-handoff.jpg")}
-                alt="Urumuri courier handing off a delivery bag from a branded motorcycle"
+                alt={home.gallery.courierAlt}
                 width={842}
                 height={550}
                 sizes="(max-width: 720px) 100vw, 50vw"
               />
               <div className={galleryStyles.galleryCaption}>
-                <p>Fast, secure deliveries</p>
-                <span>Food, packages and essentials handled with care.</span>
+                <p>{home.gallery.courierTitle}</p>
+                <span>{home.gallery.courierText}</span>
               </div>
             </div>
           </div>

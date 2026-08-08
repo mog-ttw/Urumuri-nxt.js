@@ -118,6 +118,16 @@ export const translations = {
           "eyebrow": "Ecosystem highlights",
           "title": "One platform for transport, food, courier and business intelligence."
         },
+        "gallery": {
+          "eyebrow": "On the road",
+          "title": "Real riders, real branding, real trust across Kigali.",
+          "riderAlt": "Urumuri rider giving a passenger a safe ride through Kigali",
+          "riderTitle": "Safe, everyday rides",
+          "riderText": "Every trip backed by certified gear and trained riders.",
+          "courierAlt": "Urumuri courier handing off a delivery bag from a branded motorcycle",
+          "courierTitle": "Fast, secure deliveries",
+          "courierText": "Food, packages and essentials handled with care."
+        },
         "glass": {
           "merchantTitle": "Premium merchant intelligence",
           "merchantText": "Actionable analytics, inventory forecasting, revenue insights and demand signals for growing businesses.",
@@ -520,6 +530,51 @@ export const translations = {
           "submit": "Submit Review",
           "cancel": "Back Home"
         }
+      },
+      "faqs": {
+        "hero": {
+          "eyebrow": "Help center",
+          "title": "Frequently Asked Questions",
+          "intro": "Answers to common questions about rides, deliveries, couriers, drivers and merchants on the Urumuri network.",
+          "primary": "Contact Us",
+          "secondary": "Leave a Review",
+          "badge": "Here to help",
+          "media": "Quick answers about transport, food, courier and more."
+        },
+        "items": [
+          {
+            "q": "How do I book a ride with Urumuri Transport?",
+            "a": "Request a ride through the Urumuri app or contact our team directly. Every trip includes certified helmets and reflective safety gear."
+          },
+          {
+            "q": "What areas does Urumuri Food deliver to?",
+            "a": "We currently serve Kigali and nearby districts, covering restaurant meals, groceries and buy-for-me requests with fast, tracked delivery."
+          },
+          {
+            "q": "Can I get a package delivered the same day?",
+            "a": "Yes. Urumuri Courier offers same-day options for documents, business parcels and personal shipments with secure handling and tracking."
+          },
+          {
+            "q": "How do I become an Urumuri driver?",
+            "a": "Apply through our Drivers page. We provide electric motorcycles, safety training and flexible income opportunities for every partner."
+          },
+          {
+            "q": "How can my business partner with Urumuri?",
+            "a": "Merchants get access to sales analytics, inventory insights and promotional tools. Reach out through the Contact page to request access."
+          },
+          {
+            "q": "What safety measures are in place for riders and passengers?",
+            "a": "Premium helmets, reflective gear, professional rider training and emergency-ready support are standard across the entire network."
+          },
+          {
+            "q": "What payment and pricing options are available?",
+            "a": "Pricing is transparent and considers distance, traffic and urgency. Student and Umuganda discount programs are available on select services."
+          },
+          {
+            "q": "How do I get in touch with support?",
+            "a": "Visit the Contact page for our office location, phone, email and WhatsApp, or leave a review to share feedback about a recent experience."
+          }
+        ]
       }
     },
     "meta": {
@@ -683,6 +738,16 @@ export const translations = {
         "highlights": {
           "eyebrow": "Points forts de l'écosystème",
           "title": "Une plateforme pour le transport, la restauration, la livraison et l'intelligence commerciale."
+        },
+        "gallery": {
+          "eyebrow": "Sur la route",
+          "title": "Des conducteurs authentiques, une marque authentique, une confiance authentique à Kigali.",
+          "riderAlt": "Un chauffeur Urumuri offrant un trajet sûr à un passager à Kigali",
+          "riderTitle": "Trajets sûrs au quotidien",
+          "riderText": "Chaque trajet est assuré par un équipement certifié et des chauffeurs formés.",
+          "courierAlt": "Un coursier Urumuri remettant un sac de livraison depuis une moto de la marque",
+          "courierTitle": "Livraisons rapides et sécurisées",
+          "courierText": "Repas, colis et produits essentiels traités avec soin."
         },
         "glass": {
           "merchantTitle": "Intelligence commerciale premium",
@@ -1086,6 +1151,51 @@ export const translations = {
           "submit": "Soumettre l'avis",
           "cancel": "Retour à l'accueil"
         }
+      },
+      "faqs": {
+        "hero": {
+          "eyebrow": "Centre d'aide",
+          "title": "Questions fréquentes",
+          "intro": "Réponses aux questions courantes sur les trajets, les livraisons, les coursiers, les chauffeurs et les commerçants du réseau Urumuri.",
+          "primary": "Nous contacter",
+          "secondary": "Laisser un avis",
+          "badge": "Nous sommes là pour vous aider",
+          "media": "Réponses rapides sur le transport, la restauration, la livraison et plus encore."
+        },
+        "items": [
+          {
+            "q": "Comment réserver un trajet avec Urumuri Transport ?",
+            "a": "Demandez un trajet via l'application Urumuri ou contactez notre équipe directement. Chaque trajet inclut des casques certifiés et un équipement de sécurité réfléchissant."
+          },
+          {
+            "q": "Quelles zones Urumuri Food dessert-il ?",
+            "a": "Nous desservons actuellement Kigali et les districts voisins, avec des repas de restaurant, des courses et des demandes d'achat pour vous, livrés rapidement et suivis."
+          },
+          {
+            "q": "Puis-je faire livrer un colis le jour même ?",
+            "a": "Oui. Urumuri Courier propose des options le jour même pour les documents, colis professionnels et envois personnels, avec manutention sécurisée et suivi."
+          },
+          {
+            "q": "Comment devenir chauffeur Urumuri ?",
+            "a": "Postulez via notre page Chauffeurs. Nous fournissons des motos électriques, une formation à la sécurité et des opportunités de revenus flexibles pour chaque partenaire."
+          },
+          {
+            "q": "Comment mon entreprise peut-elle devenir partenaire d'Urumuri ?",
+            "a": "Les commerçants ont accès à des analyses de ventes, des informations sur les stocks et des outils promotionnels. Contactez-nous via la page Contact pour demander l'accès."
+          },
+          {
+            "q": "Quelles mesures de sécurité sont en place pour les conducteurs et passagers ?",
+            "a": "Casques premium, équipement réfléchissant, formation professionnelle des conducteurs et assistance d'urgence sont standard sur l'ensemble du réseau."
+          },
+          {
+            "q": "Quelles options de paiement et de tarification sont disponibles ?",
+            "a": "La tarification est transparente et tient compte de la distance, du trafic et de l'urgence. Des programmes de réduction pour étudiants et participants à l'Umuganda sont disponibles sur certains services."
+          },
+          {
+            "q": "Comment puis-je contacter le support ?",
+            "a": "Consultez la page Contact pour notre adresse, téléphone, e-mail et WhatsApp, ou laissez un avis pour partager votre expérience récente."
+          }
+        ]
       }
     },
     "meta": {
@@ -1249,6 +1359,16 @@ export const translations = {
         "highlights": {
           "eyebrow": "生态亮点",
           "title": "一个平台，整合交通、餐饮、快递与商业智能。"
+        },
+        "gallery": {
+          "eyebrow": "在路上",
+          "title": "真实的骑手，真实的品牌，基加利的真实信赖。",
+          "riderAlt": "Urumuri骑手在基加利安全地搭载乘客",
+          "riderTitle": "安全的日常出行",
+          "riderText": "每一趟行程都由认证装备和训练有素的骑手保障。",
+          "courierAlt": "Urumuri快递员从品牌摩托车上交付快递包裹",
+          "courierTitle": "快速安全的配送",
+          "courierText": "餐食、包裹和日常用品均被悉心处理。"
         },
         "glass": {
           "merchantTitle": "高端商户智能",
@@ -1652,6 +1772,51 @@ export const translations = {
           "submit": "提交评价",
           "cancel": "返回首页"
         }
+      },
+      "faqs": {
+        "hero": {
+          "eyebrow": "帮助中心",
+          "title": "常见问题",
+          "intro": "关于Urumuri网络上的乘车、配送、快递、司机和商家的常见问题解答。",
+          "primary": "联系我们",
+          "secondary": "发表评价",
+          "badge": "随时为您提供帮助",
+          "media": "关于交通、餐饮、快递等的快速解答。"
+        },
+        "items": [
+          {
+            "q": "如何通过Urumuri Transport预订行程？",
+            "a": "通过Urumuri应用请求乘车，或直接联系我们的团队。每趟行程均配备认证头盔和反光安全装备。"
+          },
+          {
+            "q": "Urumuri Food配送到哪些区域？",
+            "a": "我们目前服务于基加利及周边地区，涵盖餐厅餐食、日用品和代购服务，配送快速并可追踪。"
+          },
+          {
+            "q": "包裹可以当天送达吗？",
+            "a": "可以。Urumuri Courier为文件、商业包裹和个人物品提供当日达服务，并配备安全处理与跟踪。"
+          },
+          {
+            "q": "如何成为Urumuri骑手？",
+            "a": "通过我们的骑手页面申请。我们为每位合作伙伴提供电动摩托车、安全培训和灵活的收入机会。"
+          },
+          {
+            "q": "我的企业如何与Urumuri合作？",
+            "a": "商家可获得销售分析、库存洞察和促销工具。请通过联系页面与我们联系申请权限。"
+          },
+          {
+            "q": "针对骑手和乘客有哪些安全措施？",
+            "a": "优质头盔、反光装备、专业骑手培训和应急支持是整个网络的标准配置。"
+          },
+          {
+            "q": "有哪些支付和定价方式？",
+            "a": "定价透明，综合考虑距离、交通和紧急程度。部分服务提供学生和Umuganda参与者折扣计划。"
+          },
+          {
+            "q": "如何联系客服？",
+            "a": "请访问联系页面查看我们的办公地址、电话、邮箱和WhatsApp，或留下评价分享您近期的体验。"
+          }
+        ]
       }
     },
     "meta": {
@@ -1815,6 +1980,16 @@ export const translations = {
         "highlights": {
           "eyebrow": "Iby'ingenzi mu sisitemu",
           "title": "Platform imwe ya ubwikorezi, ibiryo, ibyoherezwe n'ubwenge bwa abaguzi."
+        },
+        "gallery": {
+          "eyebrow": "Mu muhanda",
+          "title": "Abamotari b'ukuri, ikirango cy'ukuri, ikizere cy'ukuri muri Kigali.",
+          "riderAlt": "Umumotari wa Urumuri atwara umukiriya mu buryo bwizewe muri Kigali",
+          "riderTitle": "Ingendo zizewe buri munsi",
+          "riderText": "Buri rugendo rushingiye ku bikoresho byemewe n'abamotari bahuguwe.",
+          "courierAlt": "Umumotari wa Urumuri watanze agasaho k'ibyoherejwe akoresheje moto ifite ikirango",
+          "courierTitle": "Ibyoherejwe byihuse kandi byizewe",
+          "courierText": "Ibiryo, ibipaki n'ibikoresho by'ingenzi bikorwaho witonze."
         },
         "glass": {
           "merchantTitle": "Ubwenge bw'abaguzi bw'ubunararibonye",
@@ -2218,6 +2393,51 @@ export const translations = {
           "submit": "Ohereza isuzuma",
           "cancel": "Subira ahabanza"
         }
+      },
+      "faqs": {
+        "hero": {
+          "eyebrow": "Ikigo cy'ubufasha",
+          "title": "Ibibazo bikunze kubazwa",
+          "intro": "Ibisubizo by'ibibazo bikunze kubazwa ku bijyanye n'ingendo, ibyoherejwe, abatwara ibyoherejwe, abashoferi n'abaguzi kuri sisitemu ya Urumuri.",
+          "primary": "Duhamagare",
+          "secondary": "Tanga igitekerezo",
+          "badge": "Turahari kugufasha",
+          "media": "Ibisubizo byihuse ku bwikorezi, ibiryo, ibyoherejwe n'ibindi."
+        },
+        "items": [
+          {
+            "q": "Nabikorwa nte kugira ngo mfate urugendo na Urumuri Transport?",
+            "a": "Saba urugendo ukoresheje porogaramu ya Urumuri cyangwa uhamagare ikipe yacu. Buri rugendo ririmo ingofero zemewe n'ibikoresho by'umutekano byaka umucyo."
+          },
+          {
+            "q": "Ni ahantu hehe Urumuri Food itanga serivisi?",
+            "a": "Ubu dukorera i Kigali n'uturere twegereye, dutanga ibiryo by'amaresitora, ibiribwa n'ibyifuzo byo kugura mu izina ryawe, byoherezwa vuba kandi bikurikiranwa."
+          },
+          {
+            "q": "Nshobora kohereza agasaho kanjye kakagera ku munsi umwe?",
+            "a": "Yego. Urumuri Courier itanga uburyo bwo kohereza ku munsi umwe ku nyandiko, ibipaki by'ubucuruzi n'ibintu byihariye, hamwe n'umutekano n'ikurikirana."
+          },
+          {
+            "q": "Nabikorwa nte kugira ngo mbe umumotari wa Urumuri?",
+            "a": "Saba binyuze ku rupapuro rw'Abashoferi. Duha buri mufatanyabikorwa moto z'amashanyarazi, amahugurwa y'umutekano n'amahirwe y'inyungu zigenzura."
+          },
+          {
+            "q": "Ubucuruzi bwanjye bwabikorwa bute ngo bufatanye na Urumuri?",
+            "a": "Abaguzi bahabwa uburenganzira bwo kureba isesengura ry'ibyagurishijwe, amakuru ku bicuruzwa n'ibikoresho byo kwamamaza. Duhamagare binyuze ku rupapuro rwo Kuduhamagara kugira ngo usabe uburenganzira."
+          },
+          {
+            "q": "Ni izihe ngamba z'umutekano zihari ku bamotari n'abagenzi?",
+            "a": "Ingofero zisumbuye, ibikoresho byaka umucyo, amahugurwa y'umwuga y'abamotari n'ubufasha bw'ibyihutirwa ni ibisanzwe muri gahunda yose."
+          },
+          {
+            "q": "Ni ubuhe buryo bwo kwishyura n'ibiciro bihari?",
+            "a": "Ibiciro ni byumvikana kandi bishingiye ku ntera, ubwikorezi n'ihutirwa. Gahunda zo kugabanyiriza abanyeshuri n'abagize uruhare muri Umuganda zirahari kuri serivisi zimwe na zimwe."
+          },
+          {
+            "q": "Nabikorwa nte kugira ngo mvugane n'ubufasha?",
+            "a": "Sura urupapuro rwo Kuduhamagara kugira ngo urebe aho tuherereye, telefoni, imeyili na WhatsApp, cyangwa utange igitekerezo kugira ngo usangire uburambe bwawe buheruka."
+          }
+        ]
       }
     },
     "meta": {
